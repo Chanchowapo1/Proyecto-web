@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<style>
+.texto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto h6 {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.texto .naranja {
+    color: orange;
+    font-weight: bold; 
+}
+
+.texto p {
+    font-family: Arial, sans-serif;
+    font-size: 40px; 
+}
+
+.boton-naranja {
+    background-color: orange;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cuadro-texto {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cuadro-izquierda {
+    float: left;
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+.cuadro-derecha {
+    float: right;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    margin-bottom: 20px; /* Añade espacio entre la imagen y los cuadros de texto */
+}
+</style>
+
+<div class="texto">
+    <h6>Nuestra <span class="naranja">Iglesia</span></h6>
+    <p>Centro Cristiano Internacional Condal Barcelona</p>
+    <button class="boton-naranja">Eventos</button>
+</div>
+
+<!-- Espacio para la imagen del símbolo de búsqueda -->
+<div class="busqueda">
+    <img src="Vector.png" alt="Símbolo de búsqueda">
+</div>
+
+<div class="cuadro-texto cuadro-izquierda">
+    <h3>QUIENES SOMOS</h3>
+    <p>Somos una iglesia misionera que busca predicar la palabra de Dios y Plantar iglesias, a nivel nacional e internacional.</p>
+</div>
+
+<div class="cuadro-texto cuadro-derecha">
+    <h3>NUESTRO ENFOQUE</h3>
+    <p>Enfocamos la enseñanza de la palabra de aplicación diaria del diario vivir de las personas.
+        Nuestro trabajo está enfocado hacia la excelencia como una de las maneras de honrar al Señor.</p>
+</div>
+
+<!-- Espacio para la imagen adicional -->
+<div class="busqueda">
+    <img src="Ellipse 1.png" alt="Descripción de la imagen adicional">
+</div>
