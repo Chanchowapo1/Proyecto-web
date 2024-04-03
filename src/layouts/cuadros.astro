@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<div class="txt1">
+    <p>Descubre nuestros principios, valores y creencias como comunidad de fieles al servicio de Dios.</p>
+</div>
+
+<div class="cubitos">
+    <div class="gallery">
+        <div class="image">
+            <img src="rectangle 4404.png" alt="Imagen 1">
+            <img class="overlay-image" src="ojo.png" alt="Imagen 1 overlay">
+        </div>
+        <div class="image">
+            <img src="rectangle 4404.png" alt="Imagen 2">
+            <img class="overlay-image" src="image 1.png" alt="Imagen 2 overlay">
+        </div>
+        <div class="image">
+            <img src="rectangle 4404.png" alt="Imagen 3">
+            <img class="overlay-image" src="image 2.png" alt="Imagen 3 overlay">
+        </div>
+        <div class="image">
+            <img src="rectangle 4404.png" alt="Imagen 4">
+            <img class="overlay-image" src="image 3.png" alt="Imagen 4 overlay">
+        </div>
+    </div>
+</div>
+
+<style>
+ .txt1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Alinea los elementos secundarios verticalmente */
+    margin-left: auto; /* Establece el margen izquierdo automáticamente */
+    margin-right: auto; /* Establece el margen derecho automáticamente */
+}
+.cubitos {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve las imágenes si no caben en una línea */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+
+.image {
+    position: relative;
+    margin: 0 10px;
+    margin-left: 50px;
+    flex: 1 0 200px; /* Establece el ancho mínimo y máximo de las imágenes */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30%;
+    max-height: 30%;
+}
+
+/* Consulta de medios para pantallas de tamaño pequeño (móviles) */
+@media screen and (max-width: 600px) {
+    .image {
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    }
+    .image {
+    position: relative;
+    margin:  10px;
+    flex:  100px; /* Establece el ancho mínimo y máximo de las imágenes */
+    width: 40px;
+}
+}
+</style>
