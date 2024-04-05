@@ -1,0 +1,71 @@
+<div style="display: flex; justify-content: center;">
+   <main style="width: 100%;">
+     <div class="pastor">
+       <img src="Line 1.png">
+     </div>
+ 
+     <div class="segunda-imagen">
+       <img src="gafitas.png">
+       <div class="texto">
+         <p style="font-weight: bold;">Daniel Vasquez Blog</p>
+         <p style="font-weight: bold; font-size: 20px;">Bendiciones a todos</p>
+         <p style="font-weight: bold;">Soy el pastor Daniel Vasquez Tabares y quiero dirigirme a todas las personas que visitan nuestra web y darles la bienvenida.</p>
+         <br><br>
+         <p style="font-weight: bold;">Estamos experimentando lo que dijo el profeta Habacuc; Aunque la vision tardara, aun por un tiempo, mas se apresura hacia el fin y no mentira, aunque tarde, esperalo, porque sin duda vendrá no tardara Hab 2-3 Juntos, tu y nosotros al sumergirnos en estas noticias, testimonios, articulos seremos motivados hasta el asombro y diremos realmente nuestro Dios es muy grande y sigue haciendo maravillas. Me despido esperando que este sea un medio de comunicación eficaz y esperamos que de esta experiencia tu vida sea profundamente bendecida. Bendiciones</p>
+         <br><br>
+         <p style="font-weight: bold; color: orange; text-align: center;">Daniel Vasquez - Pastor Rector - CCIcondalbcn</p>
+       </div>
+     </div>
+   </main>
+ </div>
+ 
+ <style>
+   .pastor {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: calc(100% - 200px); 
+     margin: 0 100px; 
+     margin-bottom: 20px; 
+   }
+ 
+   .pastor img,
+   .segunda-imagen img {
+     max-width: 100%;
+     height: auto; 
+   }
+ 
+   .texto {
+     width: 50%;
+   }
+ 
+   .segunda-imagen {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 100%; 
+     margin-bottom: 20px; 
+   }
+ 
+   .segunda-imagen p {
+     text-align: justify;
+     font-weight: bold; 
+   }
+ 
+   .segunda-imagen p:nth-child(2) {
+     font-size: 40px; 
+   }
+ 
+   @media screen and (max-width: 768px) {
+     .segunda-imagen {
+       flex-direction: column;
+       align-items: center;
+     }
+     .segunda-imagen img {
+       max-width: 100%;
+     }
+     .texto {
+       width: 80%;
+     }
+   }
+ </style>
