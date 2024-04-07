@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+  <div class="image-container">
+    <img class="background-image" src="division.png" alt="Descripción de la imagen">
+    <img class="foreground-image" src="pray.png" alt="Descripción de la segunda imagen">
+  </div>
+
+
+<style>
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Extiende el contenedor al ancho completo */
+    overflow: hidden; /* Elimina el espacio adicional alrededor de la imagen */
+    background-color: rgb(243, 207, 173);
+  }
+
+  .background-image {
+    position: relative;
+    width: 100%; /* Extiende la imagen al ancho completo del contenedor */
+    max-width: 100%; /* Asegura que la imagen no se extienda más allá de su tamaño original */
+    height: auto;
+    border-radius: 1px;
+    padding: 3px; /* Espacio alrededor de la imagen */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    filter: drop-shadow(0 5px 5px rgba(255, 102, 0, 0.5)); /* Aplica una sombra roja solo en la dirección vertical */
+  }
+
+  .foreground-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 10%; /* Limita el tamaño máximo de la segunda imagen */
+    width: 8%; /* Ajusta la anchura de la segunda imagen al 100% */
+    height: auto; /* Ajusta la altura de la segunda imagen automáticamente */
+    bottom: 10px; /* Posición a 10px del borde inferior */
+    z-index: 1; /* Asegura que la segunda imagen esté sobre la primera */
+  }
+
+  @media screen and (max-width: 768px) {
+    .foreground-image {
+      max-width: 80%; /* Reducir el tamaño máximo de la segunda imagen en pantallas más pequeñas */
+    }
+  }
+</style>

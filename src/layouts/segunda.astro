@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+    <style>
+      .matutino {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      
+      .contenido {
+        width: 100%; /* Ancho del contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .texto {
+        width: 100%; /* Ancho del texto según sea necesario */
+        padding-right: 20px; /* Espacio entre el texto y la imagen */
+        text-align: center;
+      }
+      
+      .titulo {
+        color: brown;
+        font-size: 36px;
+        margin-bottom: 20px; /* Espacio inferior para separar del texto */
+        text-align: center;
+      }
+      
+      .descripcion {
+        font-size: 24px;
+        margin-bottom: 20px; /* Espacio inferior para separar del botón */
+      }
+      
+      .imagen {
+        width: 100%; /* Ancho de la imagen según sea necesario */
+      }
+      
+      .boton-formulario {
+        background-color: #eb9b34;
+        border: none;
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 20px 0;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      .boton-formulario:hover {
+        background-color: #f8d298;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .matutino {
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+        
+        .contenido {
+          flex-direction: row;
+        }
+        
+        .texto {
+          width: 60%;
+          padding-right: 20px;
+          text-align: left;
+        }
+        
+        .imagen {
+          width: 40%;
+        }
+      }
+    </style>
+    
+    <div class="matutino">
+      <div class="contenido">
+        <div class="texto">
+          <h1 class="titulo">MATUTINO</h1>
+          <p class="descripcion">
+            Que es el Ministerio Matutino?<br>
+            Se encarga de llevar en oracion todas las peticiones que la congregación hace semana a semana, y durante los tiempos de ayuno y vigilia. Todos los MIERCOLES, jueves, viernes a las 5:00 de la mañana, la congregacion se une para adorar y orar por nuestra ciudad y peticiones en general. En esta celebracion es posible experimentar la presencia gloriosa del Espiritu Santo obrando a favor de las causas tanto personales como las comunes que nos unen en oracion.
+          </p>
+          <p> Solicitud de Oracion</p>
+          <button class="boton-formulario">Formulario</button>
+          <p>Si tienes alguna peticion de oracion por la que quieres que nuestro ministerio interceda, llena el siguiente formulario:</p>
+        </div>
+        <div class="imagen">
+          <img class="background-image" src="manos.png" alt="Descripción de la imagen">
+        </div>
+      </div>
+    </div>
+
+  
+  
