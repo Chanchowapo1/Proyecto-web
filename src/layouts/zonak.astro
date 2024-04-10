@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<br>
+<br>
+<div class="kids">
+    <h1 class="titulo">ZONA <span class="orange">KIDS</span></h1>
+    <p class="texto">Nuestra visión es guiar a los ninos al conocimiento de Jesus, disimulandolos con la palabra de Dios.</p>
+    <div class="content">
+      <p class="left-text">Atraer a los ninos hacia Jesus con un espiritu de amor, y servicio 
+          asegurandonos que estos entienden la ensenanza biblica.</p>
+      <img class="img" src="nina.png" alt="Descripción de la imagen">
+      <p class="right-text">Los ninos estan en las aulas de la escuela biblica siendo ministrados
+           a traves de historias biblicas, de una forma entretenida y dinamica haciendo que su estadia 
+           sea agradable, segura y sobre todo discipular.</p>
+    </div>
+    <!-- Textos adicionales debajo de los existentes -->
+    <p class="left-text5">MARCOS 10-14</p>
+    <p class="left-text4">Dejad que los niños venid porque de los tales es el reino de Dios.</p>
+    <p class="right-text2">JUAN 21-15 </p>
+    <p class="right-text3">Apacienta a mis corderos</p>
+</div>
+  
+<style>
+.kids {
+  margin-left: 25%;
+}
+.titulo {
+  font-weight: bold;
+  font-size: 2em;
+}
+.orange {
+  color: rgb(255, 115, 0);
+}
+.texto {
+  /* Estilos adicionales para el texto si lo deseas */
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la pantalla en tamaños más pequeños */
+  margin-right: 20%; /* Ajusta el margen derecho del contenedor */
+}
+.left-text, .right-text {
+  flex: 1;
+  max-width: 45%; /* Reducimos el ancho máximo del texto */
+  text-align: justify; /* Justifica el texto */
+  margin: 0 5px; /* Ajusta los márgenes laterales del texto */
+}
+.img {
+  max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
+  margin-right: 10%; /* Ajusta el margen derecho de la imagen */
+}
+.right-text2 {
+  margin-left: 60%;
+  margin-top: -6%;
+}
+.right-text3 {
+  margin-left: 60%;
+}
+.left-text5, .left-text4 {
+  max-width: 45%;
+  margin-top: -5%; /* Ajusta la posición vertical */
+  text-align: justify; /* Justifica el texto */
+  margin-right: 20px; /* Margen derecho */
+}
+.left-text4 {
+  margin-top: 2%; /* Ajusta la posición vertical */
+  margin-right: 20px; /* Margen derecho */
+}
+@media screen and (max-width: 767px) {
+  .kids {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .content {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .left-text, .right-text {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .left-text5 {
+  margin-top: 2%; /* Ajusta la posición vertical */
+  margin-right: 20px; /* Margen derecho */
+}
+}
+</style>
