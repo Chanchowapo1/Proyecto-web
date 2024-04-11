@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<br>
+<br>
+<div style="text-align: center; margin-bottom: 20px;">
+  <h1>HISTORIA</h1>
+</div>
+
+<div class="historia">
+  <div class="text-container">
+    <p style="text-align: justify;"><b>1.</b> En el centro cristiano internacional CCI, es una organizacion cristiana fundada en el ano 1999, consciente del llamado supremo de Dios para su iglesia. De ir por todo el mundo y predicar el evangelio, ha proclamado abiertamente que somos una iglesia misionera.</p>
+  </div>
+  
+  <div class="text-container">
+    <p style="text-align: justify;"><b>2.</b> Al poco tiempo de su fundación el CCI se vio en vuelto en un proceso natural de crecimiento y extensión misionera hacia otras ciudades y paises, por lo que en el ano 2003 establece como extension misionera de la organizacion, una red que aglutinara a las iglesias CCI alrededor de una vision misionera de alcance global y les proveyera un ambito organizacional de trabajo y cooperacion basado en vision compartida y relaciones comprometidas.</p>
+  </div>
+</div>
+
+<style>
+  .historia {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no caben en una sola línea */
+    justify-content: center; /* Centra horizontalmente los elementos */
+  }
+
+  .text-container {
+    width: 20%; /* Ancho del contenedor de texto */
+    margin: 100px; /* Espacio entre los contenedores de texto */
+  }
+
+  @media (max-width: 768px) {
+    .text-container {
+      width: 80%; /* Ancho del contenedor de texto en dispositivos móviles */
+    }
+  }
+</style>
