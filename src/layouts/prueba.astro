@@ -2,5 +2,67 @@
 import Layout from "../layouts/Layout.astro"
 ---
 <div class="yosepe">
-  <img src="manos.png" alt="Imagen de ejemplo">
+  <div class="image-container">
+    <img src="recta.png" alt="Imagen de ejemplo">
+  </div>
+  <div class="image-container">
+    <img src="recta.png" alt="Otra imagen">
+  </div>
 </div>
+
+<div class="text-container">
+  <h1>RED MISIONERA CCI</h1>
+  <p>Establecimiento De La Red</p>
+</div>
+
+<div class="image-container-right">
+  <img src="frame.png" alt="Tercera imagen">
+</div>
+
+<div class="bottom-image">
+  <img src="Line 1.png" style="width: 50%;"> <!-- Asegura un ancho definido para la imagen -->
+</div>
+
+<style>
+  .yosepe {
+    display: flex;
+  }
+
+  .image-container {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre las imágenes */
+    margin-left: 200px;
+    margin-top: 150px;
+    text-align: center; /* Centra el texto debajo de la imagen */
+  }
+  .text-container {
+    margin-left: 20%;
+    margin-top: 150px;
+  }
+  .text-container p {
+    font-size: 24px; /* Tamaño de fuente para el párrafo */
+  } 
+   .text-container h1 {
+    font-size: 30px; /* Tamaño de fuente más grande para el h1 */
+    margin-bottom: 10px; /* Espacio inferior entre el h1 y el párrafo */
+    font-weight: bold;
+  }
+  .image-container-right {
+    margin-left: 56%; 
+    margin-top: -100px; 
+  }
+  .bottom-image {
+    text-align: center; /* Centra la imagen */
+    margin-left: 50%;
+  }
+  @media (max-width: 768px) {
+    .image-container-right {
+      display: none; /* Oculta la imagen en dispositivos móviles */
+    }
+    
+    .text-container {
+      text-align: center; /* Centra el texto en dispositivos móviles */
+      margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+    }
+  }
+</style>
