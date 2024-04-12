@@ -34,4 +34,17 @@ import Layout from "../layouts/Layout.astro"
       width: 80%; /* Ancho del contenedor de texto en dispositivos móviles */
     }
   }
+
+  /* Estilo para la imagen en el suelo */
+  .footer-image {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%; /* Ajustar el ancho de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción de aspecto */
+  }
 </style>
+
+<img src="suelo.png" alt="Descripción de la imagen" class="footer-image">
